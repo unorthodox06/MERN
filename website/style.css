@@ -56,7 +56,7 @@ ul{
     margin-top: 2rem;
 }
 
-.skills>div.p{
+.skills>div>.p{
        padding: 1rem;
 }
 
