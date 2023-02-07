@@ -11,3 +11,16 @@
 
     l = 19;
     console.log(l);
+
+    //String
+
+    //1. extraction method
+
+     //slice method
+
+    let str = "hello aniket";
+
+    console.log(str);
+
+    let slicestr = str.slice(2,5);
+    console.log(slicestr);
