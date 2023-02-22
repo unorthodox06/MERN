@@ -198,6 +198,7 @@ const person = {
     // changeAgeAndName();
 
     console.log(person);
+    
 
 // Que - 17
 
