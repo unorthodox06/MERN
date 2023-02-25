@@ -3,6 +3,9 @@ const fs = require("fs");
 const f1 = require("../JS/temp");
 
 console.log(f1);
+
+let ans = f1.sub(5 , 2);
+console.log(ans);
 // console.log(fs);
 
 // let res = fs.appendFileSync("f1.txt","hello i am f1 file");

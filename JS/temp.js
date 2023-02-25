@@ -9,3 +9,7 @@ sub:function sub(a,b){
 }
 
 }
+
+// console.log("print in temp"+obj);
+
+module.exports = obj;
