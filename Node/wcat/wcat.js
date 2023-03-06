@@ -29,7 +29,7 @@ for (let i = 0; i < filesArr.length; i++){
     if (!doesExist) {
         console.log("One or more File(s) do not exist ");
         // return;
-        // process.exit();
+        process.exit();
     }
 }
 
@@ -65,8 +65,8 @@ if (isPresent) {
             tempArr.push(contentArr[i]);
         }
     }
-    console.log("data after removing extra lines\n",tempArr);
-    // contentArr = tempArr;
+    // console.log("data after removing extra lines\n",tempArr);
+    contentArr = tempArr;
 }
 
 let indexOfN = optionsArr.indexOf("-n");
@@ -102,6 +102,18 @@ else{
 
 function modifyContentByN(){
     for(let i = 0; i < contentArr.length; i++){
-        contentArr[i] = i
+        contentArr[i] = (i+1) + ") " + contentArr[i];
     }
 }
+
+function modifyContentByB(){
+    let count = 1;
+    for (let i = 0; i < contentArr.length; i++) {
+        if (contentArr[i] != "") {
+            contentArr[i] = count + ") " + contentArr[i];
+            count ++;
+        }
+    }
+}
+
+console.log(contentArr);
